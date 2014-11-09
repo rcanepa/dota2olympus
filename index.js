@@ -1,6 +1,6 @@
 var server = require('./server');
 var router = require('./router')
-var api = require('./controllers/api');
+var api = require('./app/api');
 
 var handle = {};
 handle['/'] = api.indexAPI;
