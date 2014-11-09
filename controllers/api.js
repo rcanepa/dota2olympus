@@ -5,7 +5,6 @@ var logFilename = '[' + __filename + ']';
 
 exports.indexAPI = function(request, response){
 	console.log(logFilename, 'Request handler "indexAPI" was called.');
-	var response_data = '';
 	var host = 'https://api.steampowered.com',
 		path = '/IDOTA2Match_570/GetMatchHistory/V001/?key=' + secrets.steamkey + '&matches_requested=1&account_id=cohetin';
 	var url = host + path;
