@@ -1,6 +1,6 @@
 var http = require('http');
 var url = require('url');
-var settings = require('./settings.json')
+var settings = require('./config/settings.json')
 
 var logFilename = '[' + __filename + ']';
 

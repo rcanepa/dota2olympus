@@ -1,11 +1,10 @@
 var server = require('./server');
 var router = require('./router')
-var requestHandlers = require('./requestHandlers');
+var api = require('./controllers/api');
 
 var handle = {};
-handle['/'] = requestHandlers.start;
-//handle['/start'] = requestHandlers.start;
-//handle['/upload'] = requestHandlers.upload;
-//handle['/show'] = requestHandlers.show;
+handle['/'] = api.indexAPI;
+handle['/dummy1'] = api.dummy1;
+handle['/dummy2'] = api.dummy2;
 
 server.start(router.route, handle);
