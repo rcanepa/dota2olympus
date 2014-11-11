@@ -1,0 +1,24 @@
+{
+  "name": "dota2olympus",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "connect": "^3.3.3",
+    "serve-static": "^1.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rcanepa/dota2olympus.git"
+  },
+  "author": "rcanepag@gmail.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcanepa/dota2olympus/issues"
+  },
+  "homepage": "https://github.com/rcanepa/dota2olympus"
+}

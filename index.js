@@ -1,10 +1,9 @@
-var server = require('./server');
-var router = require('./router')
-var api = require('./app/api');
+'use strict';
 
-var handle = {};
-handle['/'] = api.indexAPI;
-handle['/dummy1'] = api.dummy1;
-handle['/dummy2'] = api.dummy2;
+var server = require('./app/server'),
+	router = require('./app/router'),
+	routes = require('./app/routes');
 
-server.start(router.route, handle);
+var baseDir = __dirname;
+
+server.start(router.route, routes.routes, baseDir);
