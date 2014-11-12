@@ -1,3 +1,3 @@
-angular.module('MatchCtrl', []).controller('MatchController', function($scope) {
+angular.module('MatchController', []).controller('MatchController', function($scope) {
 	$scope.tagline = 'Matches Stats!';
 });

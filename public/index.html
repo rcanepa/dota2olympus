@@ -7,13 +7,30 @@
 	<link rel="stylesheet" type="text/css" href="libs/bootstrap/dist/css/bootstrap.min.css">
 
 </head>
-<!--body ng-app="sampleApp" ng-controller="NerdController"-->
+<body ng-app="dotaApp" ng-controller="MainController">
 <body>
 <div class="container">
-	<h1>Hello World!</h1>
-	<p>Welcome to <b>Dota 2 Olympus</b> ... the most complete resource in the world !</p>
-	<!--div ng-view></div-->
+	<div class="page-header">
+		<ul class="nav nav-pills" role="tablist">
+			<li role="presentation" class="active"><a href="#/">Home</a></li>
+			<li role="presentation"><a href="#/player">Player</a></li>
+			<li role="presentation"><a href="#/match">Match</a></li>
+			<li role="presentation"><a href="#/about">About</a></li>
+		</ul>
+	</div>
+	<div class="jumbotron">
+		<h1>Dota 2 Olympus!</h1>
+		<p>Welcome to <b>Dota 2 Olympus</b> ... the most complete resource in the world !</p>
+		<p>Tagline: {{tagline}}</p>
+	</div>
+	<div ng-view></div>
 </div>
+
 <script type="text/javascript" src="libs/angular/angular.min.js"></script>
+<script type="text/javascript" src="libs/angular-route/angular-route.min.js"></script>
+<script type="text/javascript" src="js/controllers/MainCtrl.js"></script>
+<script type="text/javascript" src="js/controllers/MatchCtrl.js"></script>
+<script type="text/javascript" src="js/app.js"></script>
+
 </body>
 </html>
