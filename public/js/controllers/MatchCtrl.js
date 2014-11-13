@@ -1,3 +1,10 @@
-angular.module('MatchController', []).controller('MatchController', function($scope) {
-	$scope.tagline = 'Matches Stats!';
-});
+(function(){
+
+    function MatchController(){
+        this.tagline = 'Hi from the MatchController';
+    }
+
+    angular.module('dotaApp')
+        .controller('MatchController', MatchController)
+
+})();
